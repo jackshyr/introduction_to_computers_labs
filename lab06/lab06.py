@@ -15,7 +15,7 @@ def gcd(a,b):
         if c==1:#判斷是否互質
             print(str(d)+"和"+str(e)+"互質")
         else:
-            print (c)
+            print (str(d)+"和"+str(e)+"的gcd="+str(c))
 ans1 = gcd(80,20)
 ans2 = gcd(10,0)
 ans3 = gcd(19,20)
