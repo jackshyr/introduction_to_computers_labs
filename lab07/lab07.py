@@ -1,4 +1,4 @@
-class Animal():
+class Animal():#建立父類別
     def __init__(self,weight,mood):
         self.weight = weight
         self.mood =mood
@@ -8,8 +8,8 @@ class Animal():
         pass
     def bath(self):
         pass
-class Dogs(Animal):
-    def __init__(self,weight,mood):
+class Dogs(Animal):#建立子類別
+    def __init__(self,weight,mood):#建構屬性
         self.weight = weight
         self.mood = mood
     def feed(self):
@@ -20,7 +20,7 @@ class Dogs(Animal):
         self.mood +=2
     def bath(self):
         self.mood -=2
-    def printf(self,n_feed,n_walk,n_bath):
+    def printf(self,n_feed,n_walk,n_bath):#一個月內做的事情
         for i in range(0,n_feed):
             self.feed()
         for i in range(0,n_walk):
@@ -28,7 +28,7 @@ class Dogs(Animal):
         for i in range(0,n_bath):
             self.bath()
         print("狗狗現在的體重= "+str(self.weight)+" kg "+"心情 "+str(+self.mood))
-class Cats(Animal):
+class Cats(Animal):#建立子類別
     def __init__(self,weight,mood):
         self.weight = weight
         self.mood = mood
@@ -40,7 +40,7 @@ class Cats(Animal):
         self.mood -=1
     def bath(self):
         self.mood -=2
-    def printf(self,n_feed,n_walk,n_bath):
+    def printf(self,n_feed,n_walk,n_bath):#一個月內做的事情
         for i in range(0,n_feed):
             self.feed()
         for i in range(0,n_walk):

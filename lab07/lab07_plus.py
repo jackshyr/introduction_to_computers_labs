@@ -28,7 +28,7 @@ class Dogs(Animal):
         for i in range(0,n_bath):
             self.bath()
         print("狗狗現在的體重= "+str(self.weight)+" kg "+"心情 "+str(+self.mood))
-class Shiba(Dogs):
+class Shiba(Dogs):#以dogs為父類別建立一個子類別
     def __init__(self, weight, mood):
         self.weight = weight
         self.mood = mood
@@ -43,7 +43,7 @@ class Shiba(Dogs):
         for i in range(0,n_bath):
             self.bath()
         print("柴犬現在的體重= "+str(round(self.weight,1))+" kg "+"心情 "+str(+self.mood))
-    def mood_constraint(self, constraint):
+    def mood_constraint(self, constraint):#判斷心情是否超過限制
         print ("mood最高只能為="+str(constraint))
         if self.mood >= constraint:
             print("所以，柴犬現在的心情"+str(constraint))
