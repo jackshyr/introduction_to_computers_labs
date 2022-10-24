@@ -48,5 +48,5 @@ class Shiba(Dogs):#以dogs為父類別建立一個子類別
         if self.mood >= constraint:
             print("所以，柴犬現在的心情"+str(constraint))
 shiba = Shiba(5, 70) 
-shiba.printf(20, 12, 3) 
+shiba.printf(20, 10, 3) 
 shiba.mood_constraint(300)
