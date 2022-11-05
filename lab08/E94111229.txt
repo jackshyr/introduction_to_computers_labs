@@ -1,5 +1,7 @@
-E94111229.txt
-lab08.py
+home
+E94111229
+introduction_to_computers_labs
+lab08
 
 .wget-hsts
 demo
