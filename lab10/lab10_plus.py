@@ -14,7 +14,14 @@ def root():
 
 # 將webserver執行，監聽任意來源ip，port開在3000，開啟debug模式
 # debug模式代表，每次檔案更新後，webserver會自動重啟，不需要手動重啟
+f=open(path,"r")
+content = f.read()
+cc = content.split()
+f.close()
+l = len(cc)
 dic0 ={}
+for j in range(0,l,2):
+    dic0.update({cc[j]:cc[j+1]})
 @app.route('/set',methods=['POST'])
 def root1():
     data = request.form.to_dict()
