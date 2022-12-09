@@ -47,4 +47,3 @@ with open('input.json', 'r') as inputFile: #讀檔
         print('Assignment:', assignment)
         print('Cost:', minimum)
         print()
-
